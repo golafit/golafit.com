@@ -1,1 +1,247 @@
-Hello2!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--v250219a-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAFIT - Transforming Digital Signage in the MENA Region</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background-color: #000000;
+        --text-color: #ffffff;
+        --brand-color: #f58232;
+        --font-family: "Baloo Bhaijaan 2", cursive;
+        --border-color: #f58232;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: var(--font-family);
+        line-height: 1.6;
+      }
+      .top-bar {
+        background-color: var(--brand-color);
+        color: var(--background-color);
+        text-align: center;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      header img {
+        height: 100px;
+      }
+      section {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .brand {
+        color: var(--brand-color);
+        font-weight: bold;
+      }
+      .hero {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .hero h1 {
+        font-size: 2em;
+        margin: 0.5em 0;
+      }
+      .hero p {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+      }
+      .section {
+        padding: 20px;
+        text-align: center;
+      }
+      .section h2 {
+        color: var(--brand-color);
+        margin-bottom: 20px;
+      }
+      .ecosystem img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .videos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+      .videos video {
+        max-width: 90%;
+        width: 600px;
+        border: none;
+        border-radius: 4px;
+      }
+      /* Offerings Cards Styles */
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .card {
+        background-color: #111111;
+        border: 2px solid var(--brand-color);
+        border-radius: 8px;
+        padding: 20px;
+        flex: 1 1 calc(50% - 40px);
+        min-width: 280px;
+        text-align: left;
+      }
+      .card h3 {
+        margin-top: 0;
+        color: var(--brand-color);
+      }
+      footer {
+        padding: 20px;
+        text-align: center;
+        font-size: 0.9em;
+        border-top: 1px solid #333;
+      }
+      footer a {
+        color: var(--text-color);
+        text-decoration: none;
+      }
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2em;
+        }
+        .videos video {
+          width: 100%;
+        }
+        .card {
+          flex: 1 1 100%;
+        }
+      }
+
+      #videos {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      🚀 Coming Soon! We're working on something special.
+    </div>
+
+    <!-- Header with Logo -->
+    <header>
+      <img src="logo.svg" alt="LAFIT Logo" />
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>
+        See the Difference. Captivate Eyes. GO
+        <span class="brand">LAFIT</span>
+        <br />
+        شاهد الفرق. اجذب الأنظار. كن
+        <span class="brand">لافت</span>
+      </h1>
+
+      <p>
+        <span class="brand">LAFIT</span> (<span class="brand">لافت</span>) is a
+        digital signage startup set to transform the industry in the MENA region
+        by addressing market fragmentation and unifying digital signage
+        solutions. Our mission is to create a seamless ecosystem for venues,
+        advertisers, and audiences.
+      </p>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="section" id="videos">
+      <h2>Discover <span class="brand">LAFIT</span></h2>
+      <div class="videos">
+        <!-- Introductory Video -->
+        <video controls>
+          <source src="knowLAFIT.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- LAFIT Platform Capabilities Video -->
+        <video controls>
+          <source src="LAFITplatfrom.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section class="section">
+      <h2>Our Offerings</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Digital Spaces Network</h3>
+          <p>
+            Partner with high-traffic venues such as shopping malls, airports,
+            and transportation hubs to deploy digital signage hardware on a
+            revenue-sharing model.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Ad Distribution Platform</h3>
+          <p>
+            Provide advertisers – including telecoms, banks, and major brands –
+            with a centralized platform to bid on or rent premium ad slots.
+            Optional ad design services further enhance the value.
+          </p>
+        </div>
+        <div class="card">
+          <h3>All-in-One Management Platform</h3>
+          <p>
+            A unified application and website that enables venues to acquire,
+            manage, and optimize their digital spaces while offering advertisers
+            real-time feedback and detailed campaign analytics.
+          </p>
+        </div>
+        <div class="card">
+          <h3>End-to-End Solutions</h3>
+          <p>
+            Comprehensive management of hardware, software, and backend systems,
+            including seamless integration with existing infrastructures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem Diagram Section -->
+    <section class="section ecosystem">
+      <h2>Our Ecosystem</h2>
+      <img src="echosystem.svg" alt="LAFIT Ecosystem Diagram" />
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 <span class="brand">LAFIT</span></p>
+      <p>
+        For inquiries, contact us at:
+        <a href="mailto:reach@golafit.com"
+          >reach@go<span class="brand">LAFIT</span>.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
